@@ -5,7 +5,7 @@ PassengerRuby <%= scope.lookupvar('passenger::passenger_ruby') %>
 PassengerHighPerformance on
 PassengerMaxPoolSize 12
 PassengerPoolIdleTime 1500
-# PassengerMaxRequests 1000
+PassengerMaxRequests 500
 PassengerStatThrottleRate 120
 <%
 major_version = scope.lookupvar('passenger::passenger_version').match(/^(\d+)\./)
